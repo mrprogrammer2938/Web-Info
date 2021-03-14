@@ -1,0 +1,5 @@
+requests
+socket
+subprocess
+colorama
+time
