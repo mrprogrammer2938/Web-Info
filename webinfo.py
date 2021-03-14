@@ -49,7 +49,9 @@ if(str(choose) == '1'):
   time.sleep(2)
   os.system("clear")
   os.system("cowsay -f ghostbusters Hacking " + ip)
+  print(color.red + "------------------------------------------------------------------------------------------------------" + color.End)
   os.system("whois " + ip)
+  print(color.red + "------------------------------------------------------------------------------------------------------" + color.End)
   time.sleep(2)
   try1 = str(input("press Enter... "))
   if(str(try1) == ''):
