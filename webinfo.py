@@ -53,7 +53,7 @@ if(str(choose) == '1'):
   os.system("whois " + ip)
   print(color.red + "------------------------------------------------------------------------------------------------------" + color.End)
   time.sleep(2)
-  try1 = str(input("press Enter... "))
+  try1 = str(input("\npress Enter... "))
   if(str(try1) == ''):
     os.system("python3 webinfo.py")
   else:
