@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 # This code write by (ms.nope)
+clear
 echo "installing... "
 echo ""
 echo ""
