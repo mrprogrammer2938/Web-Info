@@ -23,4 +23,3 @@ echo "fnish!"
 echo ""
 echo "usage: ./webinfo.py"
 echo " "
-
