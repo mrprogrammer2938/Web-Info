@@ -2,6 +2,7 @@
 # This code write by (ms.nope)
 clear
 echo "installing... "
+sleep 1
 echo ""
 echo ""
 echo "      ████████████████████████████████████████████████"
@@ -9,16 +10,17 @@ echo "      █▄─█▀▀▀█─▄█▄─▄▄─█▄─▄─▀�
 echo "      ██─█─█─█─███─▄█▀██─▄─▀████─███─█▄▀─███─▄███─██─█"
 echo "      ▀▀▄▄▄▀▄▄▄▀▀▄▄▄▄▄▀▄▄▄▄▀▀▀▀▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▀▀▀▄▄▄▄▀"
 echo "                    (🅦🅔🅑 🅘🅝🅕🅞)"
-
+echo ""
 sudo apt install python3
 sudo apt install whois
 sudo apt install python
 sudo apt install pip3
 sudo apt install pip
 pip install requirements.txt
+chmod +x webinfo.py
 echo ""
 echo "fnish!"
-echo "usage:"
-echo "      python3 webinfo.py"
+echo ""
+echo "usage: ./webinfo.py"
 echo " "
 
