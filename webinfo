@@ -1,0 +1,135 @@
+#!/usr/bin/python
+# This code write by Ms.nope
+# version 1.3.0
+##########################################################################
+import os
+import time
+import whois
+class color:
+      green = '\033[92m'
+      red = '\033[91m'
+      End = '\033[0m'
+      blue = '\033[96m'
+opt = color.green + "\nwebinfo ~" + color.red + "#" + color.End
+ip = "\nEnter ip: "
+def cls():
+    os.system("clear")
+def start():
+    try:
+       import whois
+       menu()
+    except:
+          cls()
+          os.system("pip install python-whois")
+          time.sleep(0.50)
+          meinmenu()
+    try:
+       from colorama import Fore,init
+       menu()
+    except:
+          os.system("pip install colorama")
+          time.sleep(0.50)
+          meinmenu()
+def menu():
+    os.system("prinf'\033]2;Webinfo\a'")
+    cls()
+    print"""
+                                      mm                                   mmmm
+     *@@@@*     @     *@@@*          m@@             *@@@@*              m@* **
+       *@@     m@@     m@             @@               @@                @@*
+        @@m   m@@@m   m@     mm@*@@   @@m@@@@m         @@  *@@@@@@@@m   @@@@@    m@@*@@m
+         @@m  @* @@m  @*    m@*   @@  @@    *@@        @@    @@    @@    @@     @@*   *@@
+         !@@ @*  *@@ @*     !@******  !@     @@        @!    @!    @@    !@     @@     @@
+          !@@m    !@@m      !@m    m  !!!   m@!        @!    @!    !@    !@     @@     !@
+          !!@!*   !!@!*     !!******  !!     !!        !!    !!    !!    !:     !@     !!
+          !!!!    !!!!      :!!       :!!   !!!        :!    !!    !!    !:     !!!   !!!
+           :       :         : : ::   : : : ::       :!: : : :::  :!: :: :::     : : : : 
+""" + color.red + """
+       ----[ This code write by """ + color.green + "Ms.nope" + color.red + " ]----------" + color.blue + """
+    ----[ GitHub: """ + color.green + "https://github.com/msprogrammer2938" + color.End + color.blue + " ]------" + color.End
+    print"\n{1}-Start"
+    print"\n{2}-About Us"
+    print"\n{3}-Exit..."
+    choose = raw_input(opt)
+    if choose == '1':
+      work()
+    elif choose == '2':
+        info()
+    elif choose == '3':
+        cls()
+        print color.green + "Exiting..." + color.End
+        exit()
+    elif choose == '' or ' ' or '  ':
+        menu()
+    else:
+        cls()
+        print(choose + color.red + " Not Found!" + color.End)
+        meinmenu()
+def work():
+    os.system("prinf'\033]2;Webinfo/Start\a'")
+    cls()
+    print"""
+                                      mm                                   mmmm
+     *@@@@*     @     *@@@*          m@@             *@@@@*              m@* **
+       *@@     m@@     m@             @@               @@                @@*
+        @@m   m@@@m   m@     mm@*@@   @@m@@@@m         @@  *@@@@@@@@m   @@@@@    m@@*@@m
+         @@m  @* @@m  @*    m@*   @@  @@    *@@        @@    @@    @@    @@     @@*   *@@
+         !@@ @*  *@@ @*     !@******  !@     @@        @!    @!    @@    !@     @@     @@
+          !@@m    !@@m      !@m    m  !!!   m@!        @!    @!    !@    !@     @@     !@
+          !!@!*   !!@!*     !!******  !!     !!        !!    !!    !!    !:     !@     !!
+          !!!!    !!!!      :!!       :!!   !!!        :!    !!    !!    !:     !!!   !!!
+           :       :         : : ::   : : : ::       :!: : : :::  :!: :: :::     : : : :
+"""
+    web = raw_input("Enter ip or url: ")
+    time.sleep(0.50)
+    start2 = whois.whois(web)
+    print(start2)
+    time.sleep(0.50)
+    tryagain()
+def tryagain():
+    try4 = raw_input("Do you want to try again? [y/n] ")
+    if try4 == 'y':
+      work()
+    elif try4 == 'n':
+        meinmenu()
+    else:
+        tryagain()
+def meinmenu():
+    try3 = raw_input("Do you want to back to mein menu? [y/n] ")
+    if try3 == 'y':
+      menu()
+    elif try3 == 'n':
+        cls()
+        print(color.green + "Exiting..." + color.End)
+        exit()
+    else:
+         meinmenu()
+def info():
+    cls()
+    print color.green
+    os.system("figlet Ms.nope")
+    print color.End
+    time.sleep(0.25)
+    print color.red + """
+This code write by """ + color.green + "Ms.nope" + color.End
+    time.sleep(0.25)
+    print"""
+Dont Forget to check github :)"""
+    time.sleep(0.15)
+    print color.blue + """
+https://github.com/msprogrammer2938""" + color.End
+    time.sleep(1)
+    meinmenu()
+def meinmenu():
+    try2 = raw_input("\npress Enter...")
+    if try2 == '':
+      menu()
+    else:
+         menu()
+if __name__ == '__main__':
+  try:
+     menu()
+  except KeyboardInterrupt:
+      print("\nCtrl + C")
+      print("Exiting...")
+      exit()
