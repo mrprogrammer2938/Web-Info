@@ -59,7 +59,12 @@ def menu():
         cls()
         print color.green + "Exiting..." + color.End
         exit()
-    elif choose == '' or ' ' or '  ':
+   
+    elif choose == '':
+        menu()
+    elif choose == ' ':
+         menu()
+    elif choose == '  ':
         menu()
     else:
         cls()
