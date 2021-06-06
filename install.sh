@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-# This code write by (ms.nope)
+# This code write by (Mr.nope)
 clear
 echo "installing... "
 sleep 1
@@ -22,4 +22,5 @@ echo ""
 echo "fnish!"
 echo ""
 echo "usage: ./webinfo.py"
-echo " "
+echo ""
+exit 1
