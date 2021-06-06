@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# This code write by Ms.nope
+# This code write by Mr.nope
 # version 1.3.0
 ##########################################################################
 import os
@@ -45,8 +45,8 @@ def menu():
           !!!!    !!!!      :!!       :!!   !!!        :!    !!    !!    !:     !!!   !!!
            :       :         : : ::   : : : ::       :!: : : :::  :!: :: :::     : : : : 
 """ + color.red + """
-       ----[ This code write by """ + color.green + "Ms.nope" + color.red + " ]----------" + color.blue + """
-    ----[ GitHub: """ + color.green + "https://github.com/msprogrammer2938" + color.End + color.blue + " ]------" + color.End
+       ----[ This code write by """ + color.green + "Mr.nope" + color.red + " ]----------" + color.blue + """
+    ----[ GitHub: """ + color.green + "https://github.com/mrprogrammer2938" + color.End + color.blue + " ]------" + color.End
     print"\n{1}-Start"
     print"\n{2}-About Us"
     print"\n{3}-Exit..."
@@ -112,17 +112,17 @@ def meinmenu():
 def info():
     cls()
     print color.green
-    os.system("figlet Ms.nope")
+    os.system("figlet Mr.nope")
     print color.End
     time.sleep(0.25)
     print color.red + """
-This code write by """ + color.green + "Ms.nope" + color.End
+This code write by """ + color.green + "Mr.nope" + color.End
     time.sleep(0.25)
     print"""
 Dont Forget to check github :)"""
     time.sleep(0.15)
     print color.blue + """
-https://github.com/msprogrammer2938""" + color.End
+https://github.com/mrprogrammer2938""" + color.End
     time.sleep(1)
     meinmenu()
 def meinmenu():
@@ -137,4 +137,4 @@ if __name__ == '__main__':
   except KeyboardInterrupt:
       print("\nCtrl + C")
       print("Exiting...")
-      exit()
+      exit(1)
